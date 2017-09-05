@@ -4,7 +4,8 @@
   "description": "webpack demo (一步一步教你构建自己的webpack自动化工程)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
