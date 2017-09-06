@@ -2,11 +2,12 @@
  * @Author: yangxiooping
  * @Date:   2017-09-05 17:18:22
  * @Last Modified by:   yangxiooping
- * @Last Modified time: 2017-09-06 11:28:25
+ * @Last Modified time: 2017-09-06 11:43:10
  */
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -43,6 +44,7 @@ module.exports = {
         ]
     },
     plugins: [
+    	new CleanWebpackPlugin([__dirname + "/dist"]),
         new HtmlWebpackPlugin({
             template: __dirname + "/src/index.tmpl.html",//new 一个这个插件的实例，并传入相关的参数
             minify: {
