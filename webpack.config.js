@@ -2,7 +2,7 @@
  * @Author: yangxiooping
  * @Date:   2017-09-05 17:18:22
  * @Last Modified by:   yangxiooping
- * @Last Modified time: 2017-09-06 14:39:01
+ * @Last Modified time: 2017-09-06 14:44:29
  */
 
 const path = require('path');
@@ -15,6 +15,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devtool: 'eval-source-map',
     module: {
         rules: [{
                 test: /(\.jsx|\.js)$/,
