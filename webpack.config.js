@@ -2,7 +2,7 @@
  * @Author: yangxiooping
  * @Date:   2017-09-05 17:18:22
  * @Last Modified by:   yangxiooping
- * @Last Modified time: 2017-09-06 10:37:34
+ * @Last Modified time: 2017-09-06 10:55:20
  */
 
 const path = require('path');
@@ -27,11 +27,17 @@ module.exports = {
                     loader: "style-loader"
                 }, {
                     loader: "css-loader",
-                     options: {
+                    options: {
                         modules: true,
                         minimize: true
-                     }
+                    }
                 }]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     }
