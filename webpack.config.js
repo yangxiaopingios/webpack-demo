@@ -2,7 +2,7 @@
  * @Author: yangxiooping
  * @Date:   2017-09-05 17:18:22
  * @Last Modified by:   yangxiooping
- * @Last Modified time: 2017-09-06 11:43:10
+ * @Last Modified time: 2017-09-06 14:39:01
  */
 
 const path = require('path');
@@ -55,4 +55,9 @@ module.exports = {
             },
         })
     ],
+    devServer: {
+        //一切服务都启用gzip 压缩：
+        compress: true,
+        port: 8080
+    },
 };
